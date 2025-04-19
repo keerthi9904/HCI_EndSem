@@ -1,5 +1,5 @@
 .scarcity-sidebar {
-  padding: 20px;
+  padding: 25px;
   text-align: center;
   height: 100%;
   display: flex;
@@ -16,7 +16,7 @@
 }
 
 .scarcity-text {
-  margin-top: 12px;
+  margin-top: 10px;
   font-weight: bold;
   color: #b30000;
 }

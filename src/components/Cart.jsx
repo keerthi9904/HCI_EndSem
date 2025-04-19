@@ -45,11 +45,11 @@ export default function Cart() {
       </ul>
       <p className="cart-total">{currencyFormatter.format(cartTotal)}</p>
       <p className="modal-actions">
-        <Button onClick={handleCloseCart}>
+        <Button onClick={handleCloseCart} style={{backgroundColor:'#ffcc00'}}>
           Close
         </Button>
         {cartCtx.items.length > 0 && (
-          <Button onClick={handleGoToCheckout}>Go to Checkout</Button>
+          <Button onClick={handleGoToCheckout} style={{backgroundColor:'#ffcc00'}}>Go to Checkout</Button>
         )}
       </p>
     </Modal>

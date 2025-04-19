@@ -152,10 +152,10 @@ export default function Checkout() {
                 ))}
               </ul>
               <p>Total: {currencyFormatter.format(cartTotal)}</p>
-              <Button onClick={handleShowCart} style={{ marginRight: "310px" }}>
+              <Button onClick={handleShowCart} style={{ marginRight: "310px",backgroundColor:'#ffcc00' }}>
                 Back to Cart
               </Button>
-              <Button onClick={() => setStep(2)}>Next</Button>
+              <Button onClick={() => setStep(2)} style={{backgroundColor:'#ffcc00'}}>Next</Button>
             </div>
           )}
 
@@ -167,8 +167,8 @@ export default function Checkout() {
               <Input label={<span>Street <span style={{ color: "red" }}>*</span></span>} type="text" id="street" value={formData.street} onChange={(e) => setFormData({ ...formData, street: e.target.value })} />
               <Input label={<span>Postal Code <span style={{ color: "red" }}>*</span></span>} type="text" id="postalCode" value={formData.postalCode} onChange={(e) => setFormData({ ...formData, postalCode: e.target.value })} />
               <Input label={<span>City <span style={{ color: "red" }}>*</span></span>} type="text" id="city" value={formData.city} onChange={(e) => setFormData({ ...formData, city: e.target.value })} />
-              <Button onClick={() => setStep(1)} style={{ marginRight: "350px" }}>Back</Button>
-              <Button onClick={() => setStep(3)}>Next</Button>
+              <Button onClick={() => setStep(1)} style={{ marginRight: "350px",backgroundColor:'#ffcc00' }}>Back</Button>
+              <Button onClick={() => setStep(3)} style={{backgroundColor:'#ffcc00'}}>Next</Button>
             </div>
           )}
 
@@ -176,12 +176,12 @@ export default function Checkout() {
             <div className="step3">
               <h2>Payment</h2>
               <p>Payment details will be added here (e.g., card entry).</p>
-              <Button onClick={() => setStep(2)} style={{ marginRight: "350px" }}>Back</Button>
+              <Button onClick={() => setStep(2)} style={{ marginRight: "350px",backgroundColor:'#ffcc00' }}>Back</Button>
               <Button onClick={() => {setStep(4);
                                       // Show CAPTCHA modal instead of submitting immediately
                                       setShowCaptchaModal(true);
 
-              }}>Pay Now</Button>
+              }} style={{backgroundColor:'#43A047'}}>Pay Now</Button>
             </div>
           )}
 
@@ -197,7 +197,7 @@ export default function Checkout() {
                 </label>
 
                 <div className="shipping-buttons">
-                  <button type="button" className="back-btn">Back</button>
+                  <button type="button" className="back-btn" onClick={() => setStep(3)}>Back</button>
                   <button type="submit" className="submit-btn" onClick={handleSubmit}>Submit Order</button>
                 </div>
               </div>
