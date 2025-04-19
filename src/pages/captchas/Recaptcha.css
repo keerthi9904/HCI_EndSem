@@ -1,0 +1,33 @@
+/* Custom Styling for the reCAPTCHA checkbox */
+.recaptcha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adds space between dots and recaptcha */
+}
+
+.recaptcha .g-recaptcha {
+    transform: scale(0.9); /* Reduce the size of the reCAPTCHA widget */
+    transform-origin: 0 0; /* Ensure it scales from the top-left */
+}
+
+.recaptcha .g-recaptcha div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; /* Adds rounded corners */
+    background-color: #f0f0f0; /* Light background */
+    padding: 10px;
+}
+
+.recaptcha .g-recaptcha span {
+    border: 2px solid #0073e6; /* Custom border color */
+    padding: 4px;
+    border-radius: 4px; /* Add rounded corners to checkbox */
+}
+
+/* Custom text styling */
+.recaptcha .g-recaptcha span:hover {
+    background-color: #e6f3ff; /* Light hover background */
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+/* SliderCaptcha.css */
+.slider-captcha {
+    width: 300px;
+    height: 40px;
+    position: relative;
+    background: #eee;
+    border-radius: 20px;
+    user-select: none;
+    margin: 1rem auto;
+    font-family: sans-serif;
+  }
+  
+  .slider-track {
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .slider-thumb {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #aaa;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 10;
+  }
+  

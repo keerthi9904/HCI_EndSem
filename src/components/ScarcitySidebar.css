@@ -1,0 +1,30 @@
+.scarcity-sidebar {
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #b30000;
+}
+
+.scarcity-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: opacity 0.5s ease;
+}
+
+.scarcity-text {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #b30000;
+}
+
+.scarcity-footer {
+  background-color: #fff5e6;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #333;
+}

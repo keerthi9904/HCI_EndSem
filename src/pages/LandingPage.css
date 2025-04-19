@@ -1,0 +1,221 @@
+/* After adding login page */
+
+/* General Page Styling */
+.homepage {
+background: url('../public/food-bg.jpg') no-repeat center center / cover;
+position: relative;
+text-align: center;
+height: 100vh; 
+min-height: 100vh; /*added now*/
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+/* padding: 2rem;    */ /*added now*/
+}
+
+/* Blurred Overlay */
+    
+.homepage::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5); /* Dark transparent overlay */
+backdrop-filter: blur(3px); /* Blur effect */
+z-index: 1;
+}
+    
+/* Header section */
+.header {  
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+/* padding: 5px 9%; */
+padding: 0.5rem 5%;
+position: fixed;
+/* position: absolute;  */
+top: 0;
+background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+/* z-index: 1; */
+z-index: 2;
+}
+
+.logo-container {  
+display: flex;
+align-items: center;
+}
+
+.logo {  
+/* width: 80px;
+height: 80px;  */
+width: 4.8rem;
+height: 4.8rem;
+object-fit: contain;
+border-radius: 50%;
+border: 2px solid #ffc404;
+} 
+
+.mainpage-logo{
+cursor: pointer;
+}
+
+.header-links {  
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+
+.app-text {  
+color: white;
+font-size: 1rem;
+cursor: pointer;
+}
+
+.signup-button:hover, .login-button:hover {  
+background-color: #ffcc00;
+z-index: 3;
+}
+/* Header section end */
+
+.hero {
+position: relative;
+top: 12vh;
+text-align: center;
+max-width: 90%;
+z-index: 3;
+}
+
+.hero h1 {
+/* font-size: 3rem; */
+font-size: clamp(2rem, 5vw, 3rem);
+color: #ffffff;
+margin: 0;
+}
+
+.hero span {
+color: white;
+font-weight: bold;
+z-index: 3;
+}
+
+.hero p {
+font-size: clamp(1rem, 2vw, 1.2rem);
+margin-top: 10px;
+color: #ddd;
+margin-bottom: 20px;
+}
+
+.menu-button {
+/* z-index: 6; */
+margin-top: 1.2rem;
+padding: 0.75rem 1.5rem;
+background-color: yellow;
+color: #4a3b36;
+font-size: 1rem;
+font-weight: bold;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.menu-button:hover {
+background-color: #ffcc00;
+}
+
+/* Features Section */
+.features {
+text-align: center;
+position: relative;
+top: 12vh;
+bottom: 0vh;
+padding-top: 0.625rem;
+padding-bottom: 0.625rem;
+/* padding: 2.5rem 5%; */
+}
+
+.features h2 {
+font-size: clamp(1.5rem, 3vw, 2rem);
+color: yellow;
+}
+
+.feature-cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1.25rem;
+/* margin-top: 0px;
+bottom: 0%; */
+}
+    
+.feature-card {
+background: rgba(255, 255, 255, 0.1);
+padding: 0.94rem;
+border-radius: 10px;
+width: 100%;
+max-width: 250px;
+backdrop-filter: blur(5px);
+}
+
+.feature-card h3 {
+font-size: 1.5rem;
+color: yellow;
+}
+
+.feature-card p {
+font-size: 1rem;
+color: #ddd;
+}
+
+/* Footer */
+.footer {
+text-align: center;
+/* position: relative; */
+padding: 2rem 5%;
+margin-top: 3rem;
+/* top: 10%; */
+width: 100%;
+}
+    
+.hero, .features, .footer {
+/* position: relative; */
+z-index: 3;
+color: white;
+}
+
+.hero h1 span {
+color: #ffcc00;
+}
+
+.menu-button {
+padding: 12px 20px;
+font-size: 18px;
+background-color: #ff6600;
+border: none;
+color: white;
+border-radius: 8px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.menu-button:hover {
+background-color: #e65c00;
+
+}
+
+@media (max-width: 768px) {
+    .header {
+      padding: 1rem 3%;
+    }
+    .hero {
+      top: 5vh;
+    }
+    .feature-card {
+      max-width: 90%;
+    }
+  }
+  

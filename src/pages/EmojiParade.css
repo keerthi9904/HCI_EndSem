@@ -1,0 +1,28 @@
+.emoji-parade-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* full screen height */
+    background-color: white; /* or match your app */
+  }
+  
+  .emoji-parade {
+    display: flex;
+    gap: 1rem;
+    animation: parade 1.2s linear infinite;
+  }
+  
+  .emoji {
+    font-size: 2.5rem;
+    transform: translateY(0);
+    animation: bounce 1s ease-in-out infinite;
+  }
+  
+  @keyframes parade {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }

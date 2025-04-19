@@ -1,0 +1,33 @@
+   .linear-loader-fullscreen {
+    position: fixed;
+    inset: 0;
+    background-color: #fff8e1;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .linear-loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 6px;
+    width: 100%;
+    background-color: #ffe0b2;
+    overflow: hidden;
+  }
+  
+  .linear-loader-bar {
+    height: 100%;
+    background-color: #ff9800;
+    transition: width 0.1s ease-out;
+  }
+  
+  .linear-loader-message {
+    font-size: 1.5rem;
+    color: #ff9800;
+    margin-top: 1rem;
+  }
+  
