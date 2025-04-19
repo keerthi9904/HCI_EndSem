@@ -32,6 +32,9 @@ export default function MealItem({ meal }) {
             {currencyFormatter.format(meal.price)}
           </p>
           <p className="meal-item-description">{meal.description}</p>
+          {meal.prescriptionRequired && (
+            <p className="prescription-warning">⚠️ Prescription Required</p>
+          )}
         </div>
         <p className="meal-item-actions">
           {itemQuantity > 0 ? (

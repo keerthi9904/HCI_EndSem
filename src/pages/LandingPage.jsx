@@ -18,7 +18,7 @@ function LandingPage() {
         <div className="homepage">
             <header className="header">
             <div className="logo-container">
-                <img src={logo} alt="Foodiee Logo" className="logo" />
+                <img src={logo} alt="HMeds Logo" className="logo" />
                 </div>
                 <div className="header-links">
                 <span className="app-text">Get the App</span> 
@@ -28,9 +28,9 @@ function LandingPage() {
             </header>
             {/* Hero Section */}
             <section className="hero">
-                <h1>Welcome to <span>Foodiee</span></h1>
-                <p>Discover delicious meals & order with ease!</p>
-                <p>🍽️ Join our foodie family – your taste matters here!</p>
+                <h1>Welcome to <span>HMeds</span></h1>
+                <p>Access trusted healthcare & support made easy!</p>
+                <p>🛡️Join our care circle – your well-being matters here!</p>
                 <button onClick={handleLoginClick} className="menu-button">
                     Login Here
                 </button>
@@ -38,15 +38,15 @@ function LandingPage() {
 
             {/* Features Section */}
             <section className="features">
-                <h2>Why Choose Us?</h2>
+            <h2>Why Choose Us?</h2>
                 <div className="feature-cards">
                     <div className="feature-card">
-                        <h3>🌿 Fresh Ingredients</h3>
-                        <p>Only the best quality ingredients for a flavorful experience.</p>
+                        <h3>💊 Genuine Medicines</h3>
+                        <p>Only certified and high-quality medicines from trusted sources.</p>
                     </div>
                     <div className="feature-card">
-                        <h3>⚡ Fast Delivery</h3>
-                        <p>Hot and fresh meals delivered to your doorstep.</p>
+                        <h3>🚀 Quick Delivery</h3>
+                        <p>Your medicines delivered safely to your doorstep on time.</p>
                     </div>
                     <div className="feature-card">
                         <h3>🔒 Secure Payments</h3>
@@ -57,7 +57,7 @@ function LandingPage() {
 
             {/* Footer */}
             <footer className="footer">
-                <p>&copy; 2025 Foodiee | All Rights Reserved</p>
+                <p>&copy; 2025 HMeds | All Rights Reserved</p>
             </footer>
         </div>
     );

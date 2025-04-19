@@ -9,13 +9,14 @@ const requestConfig = {};
 
 // Correct category list
 const categories = [
-  "Pasta & Rice Dishes",
-  "Pizza & Burgers",
-  "Salads & Bowls",
-  "Sandwiches & Wraps",
-  "Meat & Seafood",
-  "Soups & Stews",
-  "Desserts"
+  "Pain Relief",
+  "Antibiotics",
+  "Allergy Relief",
+  "Diabetes",
+  "Digestive Health",
+  "Hypertension",
+  "Heart Health",
+  "Supplements"
 ];
 
 export default function Meals({ searchQuery }) {
@@ -36,11 +37,11 @@ export default function Meals({ searchQuery }) {
   }
 
   if (isLoading) {
-    return <p className="center">Fetching meals...</p>;
+    return <p className="center">Fetching medicines...</p>;
   }
 
   if (error) {
-    return <Error title="Failed to fetch meals" message={error} />;
+    return <Error title="Failed to fetch medicines" message={error} />;
   }
   const filteredMeals = searchQuery
   ? loadedMeals.filter((meal) =>
@@ -65,7 +66,7 @@ export default function Meals({ searchQuery }) {
             <MealItem key={meal.id} meal={meal} />
           ))
         ) : (
-          <p style={{ color: 'gray' }}>No meals found matching "{searchQuery}" 😕</p>
+          <p style={{ color: 'gray' }}>No medicines found matching "{searchQuery}" 😕</p>
         )}
       </ul>
     </div>

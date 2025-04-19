@@ -21,7 +21,7 @@ export default function Header({ onSearch }) {
     <header id="main-header">
       <div id="title">
         <img src={logoImg} onClick={() => navigate("/")} className='mainpage-logo' alt="A restaurant" />
-        <h1>Foodiee</h1>
+        <h1>HMeds</h1>
       </div>
 
       <nav className='nav-container'>

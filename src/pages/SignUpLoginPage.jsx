@@ -33,10 +33,10 @@ export default function SignUpLoginPage() {
       <div className="left-panel">
         <img
           src="/logo.jpg"
-          alt="Foodiee Logo"
+          alt="HMeds Logo"
           className="logo-image"
         />
-        <h2 className="app-name">FOODIEE</h2>
+        <h2 className="app-name">HMeds</h2>
       </div>
 
       {/* Right Panel */}
