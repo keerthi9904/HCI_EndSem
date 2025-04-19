@@ -26,7 +26,7 @@ function ScarcitySidebar() {
 
   return (
     <div className="scarcity-sidebar">
-      <h3>🔥Selling Fast!</h3>
+      <h3>⏳Hurry – Limited Quantity!</h3>
       <img
         src={scarcityImages[currentIndex]}
         alt="Limited stock"
@@ -35,7 +35,7 @@ function ScarcitySidebar() {
       <p className="scarcity-text">Hurry up! <br/>Only a few left in stock!</p>
 
       <div className="scarcity-footer">
-        <p><strong>{orderCount.toLocaleString()}</strong> people ordered delicious meals from <strong>FOODIEE</strong> today. <br/> Try now!</p>
+        <p><strong>{orderCount.toLocaleString()}</strong> people trusted <strong>HMEDS</strong> for their health needs today. <br/>Book your care now!</p>
       </div>
     </div>
   );
