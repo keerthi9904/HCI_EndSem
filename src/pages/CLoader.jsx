@@ -15,7 +15,7 @@ function CLoader() {
   return (
     <div className="loading-container">
       <div className="loading-circle">
-        <img src={logo} alt="Foodiee Logo" className="m-image" />
+        <img src={logo} alt="HMeds Logo" className="m-image" />
       </div>
     </div>
   );

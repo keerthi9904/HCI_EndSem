@@ -1,7 +1,7 @@
    .linear-loader-fullscreen {
     position: fixed;
     inset: 0;
-    background-color: #fff8e1;
+    background-color: #84e0e8;
     z-index: 9999;
     display: flex;
     flex-direction: column;
@@ -15,19 +15,19 @@
     left: 0;
     height: 6px;
     width: 100%;
-    background-color: #ffe0b2;
+    background-color: #84e0e8;
     overflow: hidden;
   }
   
   .linear-loader-bar {
     height: 100%;
-    background-color: #ff9800;
+    background-color: #003366;
     transition: width 0.1s ease-out;
   }
   
   .linear-loader-message {
     font-size: 1.5rem;
-    color: #ff9800;
+    color: #003366;
     margin-top: 1rem;
   }
   

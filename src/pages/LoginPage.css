@@ -10,7 +10,8 @@
   /* Left Panel */
   .left-panel {
     width: 50%;
-    background-color: #f3e6a1;
+    /* background-color: #f3e6a1; */
+    background-color: #84e0e8;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,7 +21,7 @@
   }
 
   .left-panel h2{
-    color:rgb(79, 57, 3);
+    color:rgb(3, 65, 79);
     font-family:sans-serif;
   }
   
@@ -56,7 +57,9 @@
     align-items: center;
     justify-content: center;
   }
-  
+  .right-panel h1{
+    color: #1e40af;
+  }
   .login-title {
     font-size: 2rem;
     font-weight: bold;
@@ -67,7 +70,7 @@
     margin-bottom: 0.75rem;
     width: 16rem;
     text-align: left;
-    color:darkgoldenrod;
+    color:rgb(11, 46, 184);
   }
   
   .form-group label {
@@ -130,7 +133,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:darkgoldenrod;
+    color:rgb(11, 46, 184);
   }
   
   .social-buttons {

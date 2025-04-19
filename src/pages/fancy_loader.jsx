@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./FancyLoader.css";
-import CarrotImg from "../assets/carrot_bg.png"
-import Tomato from "../assets/tomato.png"
-import Coriander from "../assets/coriander.png"
+import Red from "../assets/red.png"
+import Blue from "../assets/blue.png"
+import Yellow from "../assets/yellow.png"
+import CirclePill from "../assets/circle.png"
 
 function FancyLoader() {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ function FancyLoader() {
           id: Date.now(),
           left: 45 + Math.random() * 7, 
           bottomOffset: Math.random() * 3 ,
-          type: ["carrot","tomato", "onion", "leaf"][Math.floor(Math.random() * 4)],
+          type: ["blue","circle", "red", "yellow"][Math.floor(Math.random() * 4)],
         },
       ]);
     }, 100);
@@ -35,39 +36,41 @@ function FancyLoader() {
 
   const renderSVG = (type) => {
     switch (type) {
-      case "carrot":
+      case "blue":
         return (
         <img
-            src={CarrotImg}  // Adjust the path to your image
-            alt="Carrot"
+            src={Blue}  // Adjust the path to your image
+            alt="Blue Pill"
             width="60"  // Adjust size as needed
             height="60"  // Adjust size as needed
             style={{ objectFit: "contain" }}
           />
         );
-        case "tomato":
+        case "circle":
             return (
             <img
-                src={Tomato}  // Adjust the path to your image
-                alt="Tomato"
+                src={CirclePill}  // Adjust the path to your image
+                alt="Circle Pill"
                 width="40"  // Adjust size as needed
                 height="40"  // Adjust size as needed
                 style={{ objectFit: "contain" }}
               />
             );
-      case "onion":
+      case "red":
         return (
-          <svg width="60" height="60" viewBox="0 0 64 64" fill="none">
-            <circle cx="32" cy="32" r="15" fill="#CE93D8" />
-            <circle cx="32" cy="32" r="10" fill="#BA68C8" />
-            <circle cx="32" cy="32" r="5" fill="#9C27B0" />
-          </svg>
+          <img
+            src={Red}  // Adjust the path to your image
+            alt="Red Pill"
+            width="60"  // Adjust size as needed
+            height="60"  // Adjust size as needed
+            style={{ objectFit: "contain" }}
+          />
         );
-      case "leaf":
+      case "yellow":
         return (
             <img
-            src={Coriander}  // Adjust the path to your image
-            alt="Coriander"
+            src={Yellow}  // Adjust the path to your image
+            alt="Yellow Pill"
             width="60"  // Adjust size as needed
             height="60"  // Adjust size as needed
             style={{ objectFit: "contain" }}
@@ -91,11 +94,6 @@ function FancyLoader() {
           {renderSVG(item.type)}
         </div>
       ))}
-
-      {/* <div className="steam" style={{ left: 'calc(50% - 15px)', animationDelay: '0s' }}></div>
-      <div className="steam" style={{ left: 'calc(50% - 5px)', animationDelay: '1s' }}></div> */}
-
-      {/* Bowl */}
       <div className="bowl"></div>
     </div>
   );

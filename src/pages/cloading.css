@@ -12,7 +12,7 @@ align-items: center;
 height: 100vh;
 width: 100vw;
 /* background-color: #f3f4f6; */
-background-color: #ffe0b2;
+background-color: #84e0e8;
 }
 
 .loading-circle {
@@ -31,7 +31,7 @@ display: block; /* Ensures visibility */
 width: 100%;
 height: 100%;
 position: absolute;
-border: 6px solid #ffc404; /* Translucent rotating border */
+border: 6px solid #003366; /* Translucent rotating border */
 border-radius: 50%;
 border-top-color: transparent;
 animation: rotate 3s linear infinite;

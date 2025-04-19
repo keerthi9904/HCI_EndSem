@@ -39,7 +39,7 @@ function DotsLoader({ message = "Processing your order...", onVerified, onRecipr
           padding: '2rem', zIndex: 1000, border: '2px solid black', color: 'black'
         }}>
           <h2>🎉 Thank You!</h2>
-          <p>You've unlocked a <strong>free dessert</strong>!</p>
+          <p>Thank you! Enjoy a <strong>10% discount</strong> on your next order.</p>
           <button onClick={() => {
             setShowReciprocityModal(false);
             onReciprocityClosed?.();

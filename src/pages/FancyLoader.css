@@ -1,7 +1,7 @@
 .fancy_loading-container {
     position: fixed;
     inset: 0;
-    background-color: #fff3e0;
+    background-color: #84e0e8;
     z-index: 1000;
     display: flex;
     align-items: flex-end;
@@ -13,13 +13,13 @@
   .bowl {
     width: 200px;
     height: 100px;
-    background: radial-gradient(ellipse at bottom, #ffcc80, #ffb74d);
+    background: radial-gradient(ellipse at bottom, #003366, #003366);
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
     position: relative;
     top: -40px;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2), inset 0 8px 10px rgba(255, 255, 255, 0.3);
-    border: 2px solid #e58e26;
+    border: 2px solid #003366;
   }
   
   /* Ingredient falling items */
